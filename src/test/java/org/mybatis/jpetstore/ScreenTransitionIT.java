@@ -103,17 +103,17 @@ class ScreenTransitionIT {
     $(By.linkText("AV-CB-01")).click();
     $(By.linkText("EST-18")).click();
     $(By.linkText("Add to Cart")).click();
-    $(By.cssSelector("#Cart tr:nth-of-type(4) td")).shouldBe(text("Sub Total: $199.00"));
+    $(By.cssSelector("#Cart tr:nth-of-type(4) td")).shouldBe(text("Sub Total: $199,00"));
 
     // Update quantity
     $(By.name("EST-20")).setValue("10");
     $(By.name("updateCartQuantities")).click();
-    $(By.cssSelector("#Catalog tr td:nth-of-type(7)")).shouldBe(text("$55.00"));
-    $(By.cssSelector("#Cart tr:nth-of-type(4) td")).shouldBe(text("Sub Total: $248.50"));
+    $(By.cssSelector("#Catalog tr td:nth-of-type(7)")).shouldBe(text("$55,00"));
+    $(By.cssSelector("#Cart tr:nth-of-type(4) td")).shouldBe(text("Sub Total: $248,50"));
 
     // Remove item
     $(By.cssSelector("#Cart tr:nth-of-type(3) td:nth-of-type(8) a")).click();
-    $(By.cssSelector("#Cart tr:nth-of-type(3) td")).shouldBe(text("Sub Total: $55.00"));
+    $(By.cssSelector("#Cart tr:nth-of-type(3) td")).shouldBe(text("Sub Total: $55,00"));
 
     // Checkout cart items
     $(By.linkText("Proceed to Checkout")).click();
