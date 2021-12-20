@@ -346,7 +346,7 @@
 
 		<spring.version>5.3.13</spring.version>
 		<assertj.version>3.21.0</assertj.version>
-		<mockito.version>4.1.0</mockito.version>
+		<mockito.version>4.2.0</mockito.version>
 		<hsqldb.version>2.5.2</hsqldb.version>
 		<module.name>org.mybatis.jpetstore</module.name>
 		<sonar.login>766d443e8141667cce109293d7d3b3fa4d0f02c3</sonar.login>
